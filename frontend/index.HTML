@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تسجيل الدخول</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section class="login-section">
+      <h1>تسجيل الدخول</h1>
+      <form id="loginForm">
+
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" name="email" required placeholder="example@gmail.com" autocomplete="email" />
+
+        <label for="password">كلمة المرور</label>
+        <input type="password" id="password" name="password" required placeholder="**********" autocomplete="current-password" />
+
+        <button type="submit">تسجيل الدخول</button>
+      </form>
+
+      <div class="options">
+        <p class="forgot-password">هل نسيت كلمة المرور؟ <a href="index-2.html">اضغط هنا لاستعادتها</a></p>
+        <p>لا تملك حساب؟ <a href="index-1.html" aria-label="إنشاء حساب جديد">إنشاء حساب جديد</a></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

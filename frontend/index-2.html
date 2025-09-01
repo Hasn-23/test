@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>استعادة كلمة المرور</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section class="login-section">
+      <h1>استعادة كلمة المرور</h1>
+      <form id="forgotPasswordForm">
+        <label for="email">أدخل بريدك الإلكتروني لاستعادة كلمة المرور</label>
+        <input type="email" id="email" name="email" required placeholder="example@gmail.com" autocomplete="email" />
+        <button type="submit">إرسال رابط الاستعادة</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('forgotPasswordForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+
+      // هنا يمكنك إرسال البريد إلى الباك إند لمعالجة استعادة كلمة المرور
+      alert('تم إرسال رابط استعادة كلمة المرور إلى ' + email + ' (هذا مثال فقط)');
+    });
+  </script>
+</body>
+</html>
